@@ -165,5 +165,6 @@ public class DocumentService {
         documentRepository.deleteById(documentId);
         
         // TODO: Delete from ChromaDB via AI service
+        //Test
     }
 }
