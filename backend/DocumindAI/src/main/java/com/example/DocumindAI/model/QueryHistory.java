@@ -1,4 +1,4 @@
-package com.DocumindAI.model;
+package com.example.DocuMindAI.model;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

@@ -1,6 +1,6 @@
-package com.DocumindAI.repository;
+package com.example.DocuMindAI.repository;
 
-import com.DocumindAI.model.QueryHistory;
+import com.example.DocuMindAI.model.QueryHistory;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

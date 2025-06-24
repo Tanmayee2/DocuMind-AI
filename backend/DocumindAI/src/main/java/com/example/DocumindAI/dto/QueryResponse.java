@@ -1,4 +1,4 @@
-package com.DocumindAI.dto;
+package com.example.DocuMindAI.dto;
 
 import lombok.Data;
 import java.util.List;
