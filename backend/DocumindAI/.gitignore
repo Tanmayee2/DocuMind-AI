@@ -1,0 +1,119 @@
+# ===== Spring Boot (Generated) =====
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# ===== CUSTOM ADDITIONS FOR DOCUMIND =====
+
+# OS files
+.DS_Store
+Thumbs.db
+*~
+.directory
+.Trash-*
+
+# Data directories (will create later)
+data/uploads/*
+data/processed/*
+data/chromadb/*
+data/mongodb/*
+
+# Preserve empty directories
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/chromadb/.gitkeep
+!data/mongodb/.gitkeep
+
+# Python (for ai-service)
+ai-service/venv/
+ai-service/env/
+ai-service/.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+ai-service/build/
+ai-service/dist/
+ai-service/*.egg-info/
+ai-service/.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.dmyp.json
+dmypy.json
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+secrets.txt
+*.pem
+*.key
+*.cert
+
+# Application logs
+*.log
+logs/
+backend/logs/
+ai-service/logs/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+.docker/
+
+# Test files
+test_document.pdf
+test_document.docx
+test_document.txt
+test_output/
+*.test
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar

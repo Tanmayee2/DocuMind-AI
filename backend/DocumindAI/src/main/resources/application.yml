@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: documind-backend
+  
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/documind
+      auto-index-creation: true
+  
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+# Custom application properties
+documind:
+  upload-dir: ../data/uploads
+  processed-dir: ../data/processed
+  ai-service:
+    url: http://localhost:8000
+    timeout: 30000
+
+logging:
+  level:
+    com.documind: DEBUG
+    org.springframework.web: INFO
