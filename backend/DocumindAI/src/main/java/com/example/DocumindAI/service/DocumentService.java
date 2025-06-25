@@ -96,7 +96,7 @@ public class DocumentService {
         try {
             detectedType = tika.detect(file.getInputStream());
         }
-        } catch (IOException e) {
+        catch (IOException e) {
             throw new IllegalArgumentException("Unable to detect file type");
         }
         
