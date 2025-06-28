@@ -58,3 +58,18 @@ htmlcov/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+# Environment files with API keys
+.env
+.env.local
+.env.*.local
+*.env
+
+# But keep the example file
+!.env.example
+
+# API keys and secrets
+secrets.txt
+*.pem
+*.key
+*.cert
