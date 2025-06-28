@@ -1,0 +1,60 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Keep directory structure but ignore contents
+data/uploads/*
+data/processed/*
+data/chromadb/*
+data/mongodb/*
+
+# Preserve empty directories
+!data/uploads/.gitkeep
+!data/processed/.gitkeep
+!data/chromadb/.gitkeep
+!data/mongodb/.gitkeep
+
+# Java/Maven
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+*.class
+
+# Virtual environment
+ai-service/venv/
+ai-service/env/
+ai-service/.venv/
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Distribution / packaging
+ai-service/build/
+ai-service/dist/
+ai-service/*.egg-info/
+ai-service/.eggs/
+
+# PyCharm
+.idea/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
