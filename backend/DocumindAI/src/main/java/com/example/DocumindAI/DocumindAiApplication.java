@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DocumindAiApplication {
+public class DocumindAIApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DocumindAiApplication.class, args);
+		SpringApplication.run(DocumindAIApplication.class, args);
 	}
 
 }

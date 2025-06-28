@@ -1,4 +1,4 @@
-package com.example.DocuMindAI.dto;
+package com.example.DocumindAI.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;

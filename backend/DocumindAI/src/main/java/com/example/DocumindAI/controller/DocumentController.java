@@ -1,8 +1,8 @@
-package com.example.DocuMindAI.controller;
+package com.example.DocumindAI.controller;
 
-import com.example.DocuMindAI.dto.DocumentUploadResponse;
-import com.example.DocuMindAI.model.DocumentEntity;
-import com.example.DocuMindAI.service.DocumentService;
+import com.example.DocumindAI.dto.DocumentUploadResponse;
+import com.example.DocumindAI.model.DocumentEntity;
+import com.example.DocumindAI.service.DocumentService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

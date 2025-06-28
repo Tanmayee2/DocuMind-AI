@@ -1,7 +1,7 @@
-package com.example.DocuMindAI.service;
+package com.example.DocumindAI.service;
 
-import com.example.DocuMindAI.model.DocumentEntity;
-import com.example.DocuMindAI.repository.DocumentRepository;
+import com.example.DocumindAI.model.DocumentEntity;
+import com.example.DocumindAI.repository.DocumentRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tika.Tika;
@@ -26,7 +26,7 @@ public class DocumentService {
     private final DocumentRepository documentRepository;
     private final AIServiceClient aiServiceClient;
     
-    @Value("${DocuMindAI.upload-dir}")
+    @Value("${DocumindAI.upload-dir}")
     private String uploadDir;
     
     private static final List<String> ALLOWED_TYPES = Arrays.asList(

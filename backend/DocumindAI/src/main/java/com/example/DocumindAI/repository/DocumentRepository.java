@@ -1,6 +1,6 @@
-package com.example.DocuMindAI.repository;
+package com.example.DocumindAI.repository;
 
-import com.example.DocuMindAI.model.DocumentEntity;
+import com.example.DocumindAI.model.DocumentEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

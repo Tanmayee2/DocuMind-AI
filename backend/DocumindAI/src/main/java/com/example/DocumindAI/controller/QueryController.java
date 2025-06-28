@@ -1,8 +1,8 @@
-package com.example.DocuMindAI.controller;
+package com.example.DocumindAI.controller;
 
-import com.example.DocuMindAI.dto.QueryRequest;
-import com.example.DocuMindAI.dto.QueryResponse;
-import com.example.DocuMindAI.service.QueryService;
+import com.example.DocumindAI.dto.QueryRequest;
+import com.example.DocumindAI.dto.QueryResponse;
+import com.example.DocumindAI.service.QueryService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

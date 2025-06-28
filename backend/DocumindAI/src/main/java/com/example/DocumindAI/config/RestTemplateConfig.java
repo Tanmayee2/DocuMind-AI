@@ -1,4 +1,4 @@
-package com.example.DocuMindAI.config;
+package com.example.DocumindAI.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

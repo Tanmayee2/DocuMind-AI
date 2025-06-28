@@ -1,6 +1,6 @@
-package com.example.DocuMindAI.service;
+package com.example.DocumindAI.service;
 
-import com.example.DocuMindAI.dto.QueryResponse;
+import com.example.DocumindAI.dto.QueryResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -18,7 +18,7 @@ public class AIServiceClient {
     
     private final RestTemplate restTemplate;
     
-    @Value("${documind.ai-service.url}")
+    @Value("${documindai.ai-service.url}")
     private String aiServiceUrl;
     
     public void processDocument(String documentId, String filePath) {

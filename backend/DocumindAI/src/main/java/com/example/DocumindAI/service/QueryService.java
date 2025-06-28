@@ -1,10 +1,10 @@
-package com.example.DocuMindAI.service;
+package com.example.DocumindAI.service;
 
-import com.example.DocuMindAI.dto.QueryRequest;
-import com.example.DocuMindAI.dto.QueryResponse;
-import com.example.DocuMindAI.model.DocumentEntity;
-import com.example.DocuMindAI.model.QueryHistory;
-import com.example.DocuMindAI.repository.QueryHistoryRepository;
+import com.example.DocumindAI.dto.QueryRequest;
+import com.example.DocumindAI.dto.QueryResponse;
+import com.example.DocumindAI.model.DocumentEntity;
+import com.example.DocumindAI.model.QueryHistory;
+import com.example.DocumindAI.repository.QueryHistoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

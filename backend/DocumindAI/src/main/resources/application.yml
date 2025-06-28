@@ -3,11 +3,11 @@ server:
 
 spring:
   application:
-    name: documind-backend
+    name: DocumindAI-backend
   
   data:
     mongodb:
-      uri: mongodb://localhost:27017/documind
+      uri: mongodb://localhost:27017/DocumindAI
       auto-index-creation: true
   
   servlet:
@@ -17,9 +17,9 @@ spring:
       max-request-size: 10MB
 
 # Custom application properties
-documind:
-  upload-dir: ../data/uploads
-  processed-dir: ../data/processed
+DocumindAI:
+  upload-dir: ../../../data/uploads
+  processed-dir: ../../../data/processed
   ai-service:
     url: http://localhost:8000
     timeout: 30000
