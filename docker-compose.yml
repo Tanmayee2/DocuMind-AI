@@ -1,0 +1,54 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: documind-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: documind
+    networks:
+      - documind-network
+
+  backend:
+    build: ./backend
+    container_name: documind-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/documind
+      - DOCUMIND_AI_SERVICE_URL=http://ai-service:8000
+    volumes:
+      - ./data/uploads:/app/uploads
+      - ./data/processed:/app/processed
+    depends_on:
+      - mongodb
+      - ai-service
+    networks:
+      - documind-network
+
+  ai-service:
+    build: ./ai-service
+    container_name: documind-ai-service
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - CHROMA_DB_PATH=/app/data/chromadb
+      - CHUNK_SIZE=500
+      - CHUNK_OVERLAP=50
+    volumes:
+      - ./data/uploads:/app/uploads
+      - ./data/chromadb:/app/data/chromadb
+    networks:
+      - documind-network
+
+networks:
+  documind-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
