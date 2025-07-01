@@ -26,7 +26,8 @@ class RAGService:
         # Initialize ChromaDB
         self.chroma_client = chromadb.PersistentClient(
             path=chroma_db_path,
-            settings=Settings(anonymized_telemetry=False)
+            settings=Settings(anonymized_telemetry=False,
+            allow_reset=True)
         )
         
         # Initialize embedding model
